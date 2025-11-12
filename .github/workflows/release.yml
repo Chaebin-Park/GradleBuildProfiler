@@ -52,19 +52,4 @@ jobs:
         with:
           files: ./target/${{ matrix.target }}/release/${{ matrix.artifact_name }}
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-
-  publish-crates:
-    needs: build-release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
-
-      - name: Publish to crates.io
-        env:
-          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
-        run: cargo publish
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
