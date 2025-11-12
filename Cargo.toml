@@ -1,7 +1,14 @@
 [package]
 name = "gradle_build_profiler"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A CLI tool to analyze Gradle build profiles and provide performance insights"
+license = "MIT"
+repository = "https://github.com/Chaebin-Park/GradleBuildProfiler"
+keywords = ["gradle", "build", "profiler", "android", "performance"]
+categories = ["command-line-utilities", "development-tools"]
+readme = "README.md"
 
 [dependencies]
 anyhow = "1.0.100"  # 간단한 에러처리
