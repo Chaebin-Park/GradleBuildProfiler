@@ -7,6 +7,7 @@ edition = "2024"
 anyhow = "1.0.100"  # 간단한 에러처리
 clap = { version = "4.5.51", features = ["derive"] }    # CLI 파싱 (명령어, 옵션 처리)
 colored = "3.0.0"   # 터미널 색상 출력
+regex = "1.12.2"
 serde = { version = "1.0.228", features = ["derive"] }  # JSON 직렬화/역직렬화
 serde_json = "1.0.145"  # JSON 파싱
 tabled = "0.20.0"   # 테이블 형식 출력
