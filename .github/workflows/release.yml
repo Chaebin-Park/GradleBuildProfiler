@@ -52,7 +52,7 @@ jobs:
         with:
           files: ./target/${{ matrix.target }}/release/${{ matrix.artifact_name }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
 
   publish-crates:
     needs: build-release
