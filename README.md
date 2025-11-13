@@ -158,6 +158,19 @@ src/
 - 현재 HTML 형식의 Gradle 프로파일만 지원합니다
 - Android 프로젝트를 주요 대상으로 개발되었지만, 다른 Gradle 프로젝트에서도 사용 가능합니다
 
+## 개발자 가이드
+
+### 새 버전 릴리스
+
+새 버전을 릴리스하는 방법은 [RELEASE.md](RELEASE.md)를 참고하세요.
+
+### 로컬 빌드
+
+```bash
+cargo build --release
+./target/release/gradle-build-profiler --help
+```
+
 ## 라이선스
 
 MIT
