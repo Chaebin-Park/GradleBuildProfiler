@@ -13,7 +13,7 @@
 class GradleBuildProfiler < Formula
   desc "Analyze Gradle build profiles and provide performance insights"
   homepage "https://github.com/Chaebin-Park/GradleBuildProfiler"
-  url "https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.0.tar.gz"
+  url "https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.1.tar.gz"
   sha256 "YOUR_SHA256_HERE"
   license "MIT"
 
@@ -21,9 +21,12 @@ class GradleBuildProfiler < Formula
 
   def install
     system "cargo", "install", "--locked", "--root", prefix, "--path", "."
+    # 짧은 별칭 추가
+    bin.install_symlink "gradle-build-profiler" => "gbp"
   end
 
   test do
-    assert_match "gradle-profiler", shell_output("#{bin}/gradle_build_profiler --help")
+    assert_match "gradle-profiler", shell_output("#{bin}/gradle-build-profiler --help")
+    assert_match "gradle-profiler", shell_output("#{bin}/gbp --help")
   end
 end
