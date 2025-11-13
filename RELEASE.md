@@ -65,7 +65,7 @@ git push origin v0.1.2
 
 ## 3단계: GitHub Actions 완료 대기
 
-1. GitHub 저장소 접속: https://github.com/Chaebin-Park/GradleBuildProfiler
+1. GitHub 저장소 접속: https://github.com/Chaebin-Park/gradle-build-profiler
 2. **Actions** 탭 클릭
 3. 최신 워크플로우 실행 확인
 4. 모든 작업이 ✅ 완료될 때까지 대기 (약 5-10분)
@@ -82,7 +82,7 @@ git push origin v0.1.2
 
 ```bash
 # 버전 번호를 실제 버전으로 변경!
-curl -sL https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.2.tar.gz | shasum -a 256
+curl -sL https://github.com/Chaebin-Park/gradle-build-profiler/archive/refs/tags/v0.1.2.tar.gz | shasum -a 256
 ```
 
 출력 예시:
@@ -109,8 +109,8 @@ cd ~/Developments/homebrew-tap
 ```ruby
 class GradleBuildProfiler < Formula
   desc "Analyze Gradle build profiles and provide performance insights"
-  homepage "https://github.com/Chaebin-Park/GradleBuildProfiler"
-  url "https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.2.tar.gz"  # ← 버전 변경
+  homepage "https://github.com/Chaebin-Park/gradle-build-profiler"
+  url "https://github.com/Chaebin-Park/gradle-build-profiler/archive/refs/tags/v0.1.2.tar.gz"  # ← 버전 변경
   sha256 "abc123def456789..."  # ← 4단계에서 계산한 SHA256으로 변경
   license "MIT"
 
@@ -175,7 +175,7 @@ git tag v0.1.x
 git push origin master && git push origin v0.1.x
 
 # 3. SHA256 계산 (GitHub Actions 완료 후)
-curl -sL https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.x.tar.gz | shasum -a 256
+curl -sL https://github.com/Chaebin-Park/gradle-build-profiler/archive/refs/tags/v0.1.x.tar.gz | shasum -a 256
 
 # 4. Formula 업데이트
 cd ~/Developments/homebrew-tap
@@ -217,7 +217,7 @@ Expected: abc123...
 **해결 방법**: SHA256을 다시 계산하고 Formula 업데이트
 
 ```bash
-curl -sL https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.x.tar.gz | shasum -a 256
+curl -sL https://github.com/Chaebin-Park/gradle-build-profiler/archive/refs/tags/v0.1.x.tar.gz | shasum -a 256
 ```
 
 ### 설치 실패
@@ -237,7 +237,7 @@ brew install gradle-build-profiler
 
 GitHub Release 페이지에서 릴리스 노트를 작성하면 더 전문적입니다:
 
-1. https://github.com/Chaebin-Park/GradleBuildProfiler/releases
+1. https://github.com/Chaebin-Park/gradle-build-profiler/releases
 2. 해당 릴리스 "Edit" 클릭
 3. 변경사항 작성:
 

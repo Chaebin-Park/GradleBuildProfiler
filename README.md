@@ -27,12 +27,12 @@ cargo install gradle_build_profiler
 
 ### 바이너리 다운로드
 
-[GitHub Releases](https://github.com/Chaebin-Park/GradleBuildProfiler/releases)에서 플랫폼에 맞는 바이너리를 다운로드할 수 있습니다.
+[GitHub Releases](https://github.com/Chaebin-Park/gradle-build-profiler/releases)에서 플랫폼에 맞는 바이너리를 다운로드할 수 있습니다.
 
 ### 소스에서 빌드
 
 ```bash
-git clone https://github.com/Chaebin-Park/GradleBuildProfiler
+git clone https://github.com/Chaebin-Park/gradle-build-profiler
 cd gradle_build_profiler
 cargo build --release
 ```

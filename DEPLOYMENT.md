@@ -65,7 +65,7 @@ git push origin v0.1.0
 
 ```bash
 # 릴리스 tarball 다운로드
-curl -L https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.0.tar.gz -o v0.1.0.tar.gz
+curl -L https://github.com/Chaebin-Park/gradle-build-profiler/archive/refs/tags/v0.1.0.tar.gz -o v0.1.0.tar.gz
 
 # SHA256 계산
 shasum -a 256 v0.1.0.tar.gz
@@ -88,8 +88,8 @@ vim Formula/gradle-build-profiler.rb
 ```ruby
 class GradleBuildProfiler < Formula
   desc "Analyze Gradle build profiles and provide performance insights"
-  homepage "https://github.com/Chaebin-Park/GradleBuildProfiler"
-  url "https://github.com/Chaebin-Park/GradleBuildProfiler/archive/refs/tags/v0.1.0.tar.gz"
+  homepage "https://github.com/Chaebin-Park/gradle-build-profiler"
+  url "https://github.com/Chaebin-Park/gradle-build-profiler/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "YOUR_CALCULATED_SHA256_HERE"  # 위에서 계산한 값으로 변경
   license "MIT"
 
@@ -133,14 +133,14 @@ gradle-build-profiler --help
 ```ruby
 class GradleBuildProfiler < Formula
   desc "Analyze Gradle build profiles and provide performance insights"
-  homepage "https://github.com/Chaebin-Park/GradleBuildProfiler"
+  homepage "https://github.com/Chaebin-Park/gradle-build-profiler"
   version "0.1.0"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Chaebin-Park/GradleBuildProfiler/releases/download/v0.1.0/gradle_build_profiler-macos-x86_64"
+    url "https://github.com/Chaebin-Park/gradle-build-profiler/releases/download/v0.1.0/gradle_build_profiler-macos-x86_64"
     sha256 "YOUR_SHA256_HERE"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Chaebin-Park/GradleBuildProfiler/releases/download/v0.1.0/gradle_build_profiler-macos-aarch64"
+    url "https://github.com/Chaebin-Park/gradle-build-profiler/releases/download/v0.1.0/gradle_build_profiler-macos-aarch64"
     sha256 "YOUR_SHA256_HERE"
   end
 
